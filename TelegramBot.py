@@ -52,12 +52,9 @@ def echo_all(message):
 
 # Бот обрабатывает сообщения с типом документ
 @bot.message_handler(content_types = ['document'])
-# Иди нахуй блять каждую функцию описывать, я уже заебался нахуй, почти одно и тоже пишу 
 def document(message):
-	# Делает проверку
 	try:
 		# Добавляет переменную chat_id для того чтобы написать в 73 и 74 строчке вместо 'message.chat.id'
-		# можно нахуй удалить, и везде пиасть 'message.chat.id', все равное нихуя не поменяется
 		chat_id = message.chat.id
 		# Создается переменная в которую закладывается id файла 
 		file_info = bot.get_file(message.document.file_id)
@@ -68,10 +65,8 @@ def document(message):
 		# Осуществляется загрузка файла 
 		with open(src, 'wb') as new_file:
 			new_file.write(downloaded_file)
-		# тут блять понятно нахуй что где и как он делает, опять то же самое что и сверху только сообщение другое
-		# иди нахуй 
 		bot.send_message(chat_id, "Пожалуй, я сохраню это")
-		# Отправляется ебучий нахуй файл 
+		# Отправляется файл 
 		bot.send_document(chat_id, open(src, 'rb'))
 	# Если воpникает какая-то ошибка в данной функции, бот отвечает пользователю на сообщение с текстом ошибки 
 	except Exception as e:
@@ -83,22 +78,19 @@ def document(message):
 def photo(message):
 	# Переменная в которую закладывается id фоточки 
 	file_info = bot.get_file(message.photo[len(message.photo)-1].file_id)
-	# Создается переменная в которую закладывается команда бота для скачивания фоточки ебаной блять на компутатор
+	# Создается переменная в которую закладывается команда бота для скачивания фоточки на компутатор
 	downloaded_file = bot.download_file(file_info.file_path)
-	# Переменная в которой указан путь скачивания файла + название сука фоточки 
+	# Переменная в которой указан путь скачивания файла + название фоточки 
 	src='C:/Users/lanak/Desktop/python/'+file_info.file_path
-	# Осуществляется загрузка фоточки блять 
+	# Осуществляется загрузка фоточки
 	with open(src, 'wb') as new_file:
 		new_file.write(downloaded_file)
-	# иди нахуууууууууууууууй
 	bot.reply_to(message,"Фото добавлено") 
-	# Отправляется эта фоточка блядская 
+	# Отправляется эта фоточка
 	bot.send_photo(message.chat.id, open(src, 'rb'))
 
-# это я расписывать не буду
-# все блять тоже самое нахуй
 @bot.message_handler(content_types = ['video'])
 def video(message):
-	bot.send_message(message.chat.id, 'Пиздатый видос, правда,  я его не воспринимаю')
+	bot.send_message(message.chat.id, 'Классный видос, правда,  я его не воспринимаю')
 
 bot.polling()
