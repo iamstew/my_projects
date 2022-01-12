@@ -22,19 +22,21 @@ elem.send_keys('alexa00guard@gmail.com')
 elem = driver.find_element_by_xpath('//input[@name="password"]')
 elem.send_keys('r.9u9MjkwHCbfiQ')
 elem.send_keys(Keys.RETURN)
+sleep(5)
 cookies = driver.get_cookies()
 
 url = 'https://artcasting.tv/aspirants?gender=1&age=20%2C50&page=1&custom=true&city_id=&country_code=-1'
 driver.get(url)
 sleep(5)
 
-elem = driver.find_element_by_xpath('//div[@class="results-wrapper"]')
-html = elem.get_attribute("innerHTML")
-soup = BeautifulSoup(html,'lxml')
+
 ActorsLinks = []
 for i in range(481):
 	for j in range(20):
-		try:	
+		try:
+			elem = driver.find_element_by_xpath('//div[@class="results-wrapper"]')
+			html = elem.get_attribute("innerHTML")
+			soup = BeautifulSoup(html,'lxml')
 			link = soup.findAll('div', class_="item")[j].find('figure').find('a')
 			href = link.get('href')
 			ActorsLinks.append(href)
