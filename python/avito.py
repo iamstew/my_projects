@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 import openpyxl
 from fake_useragent import UserAgent
 import lxml
-from time import sleep
 import datetime
 import random
 
@@ -30,12 +29,11 @@ sheet.append((
 Если вам нужно будет список прокси то раскоментите строчки снизу
 и закоментите строчку 38, в котором сейчас ваш прокси
 '''
-# proxies_list = []
-# with open('proxy.txt', 'r') as file:
-# 	for line in file:
-# 		proxies_list.append(line)
-# proxy = random.choice(proxies_list)
-proxy = "4d20d6b6bf:f56d24bb6b@109.195.6.89"
+proxies_list = []
+with open('proxy.txt', 'r') as file:
+	for line in file:
+		proxies_list.append(line)
+proxy = random.choice(proxies_list)
 proxies = {
     "http":f"SOCKS5://{proxy}",
     "https": f"SOCKS5://{proxy}"
@@ -89,7 +87,7 @@ for page_url in pages_urls:
     except:
         break
 
-driver = webdriver.Firefox(executable_path='C:\Program Files\Python38\mytools\geckodriver.exe')
+driver = webdriver.Firefox(executable_path='C:/Users/lanak/Desktop/code/webdriver/geckodriver.exe'')
 
 driver.get(src)
 cookies = driver.get_cookies()
@@ -143,10 +141,10 @@ for url in urls:
                 contact_face = soup.find('div', class_="seller-info-prop seller-info-prop_short_margin").find('div',class_="seller-info-value").text.strip()
             except:
                 contact_face = 'Не указано'
-            try:    
-                seller_photo = soup.find('a', class_="seller-info-avatar-image seller-info-avatar-image-company js-public-profile-link").get('style').replace("background-image: url('",'').replace("')", '')
-            except:
-                pass   
+        try:    
+            seller_photo = soup.find('a', class_="seller-info-avatar-image").get('style').replace("background-image: url('",'').replace("')", '')
+        except:
+            seller_photo = 'Не удалось достать'   
         sheet.append([title,img,description,price,date,name,link,seller_type,contact_face,adress,seller_photo,reg_date,seller_items,rating,reviews])
         book.save(f'{datetime.date.today()}.xlsx')
     except:
