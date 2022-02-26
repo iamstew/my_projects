@@ -57,18 +57,18 @@ for i in range(10):
     except IndexError:
         break
 numbers_pages.reverse()
+
+page_2 = 'https://www.avito.ru' + soup.find('div', class_='pagination-pages').findAll('a',class_='pagination-page')[1].get('href')
+
 for i in range(1,int(numbers_pages[1])+1):
-    try:
-        pages_urls.append(src.replace('?q',f'?p={i}&q'))
-    except:
-        pages_urls.append(src+'?p='+str(i))
+	pages_urls.append(page_2.replace('p=2',f'p={i}'))
 
 urls = []
 for page_url in pages_urls:
     try:
         '''
-        76 строчка для парсинга со своего ip
-        77 строчка для парсинга через прокси
+        78 строчка для парсинга со своего ip
+        79 строчка для парсинга через прокси
         уберите комментрий с той строчки, которую вы хотите использовать
         не рекомендуется использовать парсинг без прокси, чтобы избежать блокировку айпи
         но если нет хороших прокси, то пару раз использовать можно, но не очень часто (примерно 10 запусков в день гарантированно без бана)
