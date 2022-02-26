@@ -67,8 +67,8 @@ urls = []
 for page_url in pages_urls:
     try:
         '''
-        78 строчка для парсинга со своего ip
-        79 строчка для парсинга через прокси
+        76 строчка для парсинга со своего ip
+        77 строчка для парсинга через прокси
         уберите комментрий с той строчки, которую вы хотите использовать
         не рекомендуется использовать парсинг без прокси, чтобы избежать блокировку айпи
         но если нет хороших прокси, то пару раз использовать можно, но не очень часто (примерно 10 запусков в день гарантированно без бана)
@@ -109,7 +109,7 @@ for url in urls:
         except:
             reviews = 'Отсутствует'
         try:
-            seller_items = soup.find('div', class_="js-favorite-seller-buttons seller-info-favorite-seller-buttons").find('a').text[0]
+            seller_items = soup.find('div', class_="js-favorite-seller-buttons seller-info-favorite-seller-buttons").find('a').text.strip()[0]
         except:
             seller_items = 'Отсутствует'
         for i in range(10):
@@ -131,11 +131,6 @@ for url in urls:
             rating = 'Отсутствует'
         reg_date = soup.findAll('div', class_="seller-info-value")[1].find('div').text.strip()
         seller_type = soup.find('div', attrs={'data-marker':"seller-info/label"}).text.strip()
-        try:
-            seller_photo = soup.find('a', class_='seller-info-avatar-image  js-public-profile-link').find('a', class_="seller-info-avatar-image seller-info-avatar-image-company js-public-profile-link").replace("background-image: url('",'').replace("')", '')
-        except:
-            seller_photo = ''
-            pass
         if seller_type == 'Компания':
             try:
                 contact_face = soup.find('div', class_="seller-info-prop seller-info-prop_short_margin").find('div',class_="seller-info-value").text.strip()
@@ -144,7 +139,10 @@ for url in urls:
         try:    
             seller_photo = soup.find('a', class_="seller-info-avatar-image").get('style').replace("background-image: url('",'').replace("')", '')
         except:
-            seller_photo = 'Не удалось достать'   
+            try:
+                seller_photo = soup.find('img', class_="seller-info-shop-img").get('src')   
+            except:
+                seller_photo = 'Не удалось достать' 
         sheet.append([title,img,description,price,date,name,link,seller_type,contact_face,adress,seller_photo,reg_date,seller_items,rating,reviews])
         book.save(f'{datetime.date.today()}.xlsx')
     except:
