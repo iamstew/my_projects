@@ -1,0 +1,137 @@
+.comment{
+	height: 100px; 
+	width: 600px;
+	border-radius: 9px;
+}
+
+.nickname{
+	height: 18px;
+	width: 300px;
+	border-radius: 9px;
+}
+
+img{
+	border-color: black;
+	border-width: 20px;
+}
+body{
+	background-color: #d2d2d2;
+	height: 100%;
+	width: 1140px;
+	padding-left: 60px;
+	padding-right: 60px;
+	color: black;
+	margin: auto;
+	outline: none;
+	font-size: 15px;
+	font-family: Arial;
+}
+
+main,footer{
+	/*text-align: center ;*/
+		
+	
+	
+}
+
+.dark-theme{
+	width: 1140px;
+	margin: auto;
+	padding-left: 60px;
+	padding-right: 60px;
+	outline: 0;
+	font-size: 15px;
+	font-family: Arial;	
+	/*красный*/
+	/*background-image: linear-gradient(to right, #d82d34, #ec4c53, #ea7d81, #ad131b);*/
+	/*box-shadow: 0 5px 15px rgba(241, 112, 117, 0.4);*/
+
+	/*сине-красный*/
+	/*background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(37, 37, 37), rgb(61, 61, 61));*/
+	/*box-shadow: 0 4px 15px 0 rgba(123, 45, 160, 0.75);*/
+	/*сине-фиолетовый*/
+	background-image: linear-gradient(to right, #364a61, #4279b5, #54a3d8, #7663b9);
+	box-shadow: 0 4px 15px 0 rgba(72, 83, 97, 0.75);
+}
+
+input{
+	border-radius: 5px;
+	width: 200px;
+	height: 30px;
+	border-color: blue;
+}
+
+main{
+	background-color: #fff;
+	border-radius: 5px;
+	align-items: center;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a{
+	color: #da4f6e;
+	cursor: pointer;
+}
+
+.submit_btn, .login_btn {
+	cursor: pointer;
+	min-width: 100px;
+	outline: none;
+	background-color: #da4f6e;
+	color: black;
+	border-radius: 10px;
+	padding: 12px 48px;
+	box-shadow: 0px 0px 9px 2px rgba(195, 195, 195, 0.35);
+	transition: all 0.5s ease;
+	font-size: 12px;
+	font-weight: bold;
+	border: solid rgba(255, 255, 255, 0.50);
+	/*background-image: linear-gradient(60deg, #ffffff 10%, #d1d1d1 50%, #dddddd 100%);*/
+	/*красный*/
+	/*background-image: linear-gradient(to right, #d82d34, #ec4c53, #ea7d81, #ad131b);*/
+	/*box-shadow: 0 5px 15px rgba(241, 112, 117, 0.4);*/
+
+}
+
+.btn_hover:hover{
+	box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+	transform: scale(1.05);
+	background-color: darkorange;
+}
+iframe{
+	width: 100%;
+	height: 100%;
+}
+
+.main>form{
+	align-content: right;
+}
+
+.login{
+	align-content: right;
+}
+
+.icon{
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.shapka{
+	padding-top: 5px;
+    padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+}
+
+.links{
+	float: right;
+}
+
+ol>h1{
+	font-size: 20px;
+}
