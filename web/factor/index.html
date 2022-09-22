@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/adaptive.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<div class="logo-row">
+			<div class="nav-left">
+				<div class="logo">
+					<a href="">
+						<img class="logo-dark-theme" src="assets/img/logo-light.png" alt>
+						<img class="logo-light-theme" src="assets/img/logo-dark.png" alt>
+					</a>	
+				</div>
+			</div>
+			<div class="nav-center">
+				<div class="nav-link">
+					<a href="#">Для чего нужен</a>
+				</div>
+				<div class="nav-link">
+					<a href="#">Стоимость</a>
+				</div>
+				<div class="nav-link">
+					<a href="#">Услуги</a>
+				</div>
+			</div>
+			<div class="nav-right">
+				<div class="align-center user-block">
+					<img class="user user-light" src="assets/img/user-light.png" alt>
+					<img class="user user-dark" src="assets/img/user-dark.png" alt>
+					<img class="user user-hover" src="assets/img/user-hover.png" alt>
+					<a href="#">
+						Войти
+					</a>
+				</div>
+				<div>
+					<button class="btn contact-with-us">Связаться с нами</button>
+				</div>
+				<div class="theme-toggle">
+					<a href="#" onclick="changeTheme()">
+						<img class="moon" src="assets/img/moon.png">
+						<img class="sun" src="assets/img/sun.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div></div>
+	</header>
+	<main>
+		<div class="color-card">
+			<div class="card-bg"><div></div></div>
+			<div class="content-block">
+				<div class="content-left">
+					<span class="title">Поможем разработать и согласовать Паспорт безопасности  (АТЗ) для вашего объекта</span>
+					<div class="pt-5 h3-text"><span>от 35 000 рублей</span><span>"Под ключ"</span></div>
+					<span class="light-text pt-5">В соответствии с действующим законодательством.
+					Согласуем гарантированно в МЧС, ФСБ, МВД, Росгвардии.</span>
+					<div class="pt-5">
+						<button class="btn order-call" onclick="">Оставить заявку</button>
+					</div>
+				</div>
+				<div class="content-right">
+					<img src="assets/img/book.png" alt>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script>
+		if (localStorage.getItem('theme') == 'dark') {
+      document.body.classList.add('dark-theme');
+		}
+		else if (localStorage.getItem('theme') == null) {
+			localStorage.setItem('theme', 'light')
+		}
+		else if(localStorage.getItem('theme') == 'light'){
+			document.body.classList.remove('dark-theme');
+    }
+  </script>
+	<script>
+	  function changeTheme() {
+	    if (localStorage.getItem('theme') == 'dark'){
+	      localStorage.setItem('theme', 'light');
+	      document.body.classList.remove('dark-theme');
+	    }else if(localStorage.getItem('theme') == 'light'){
+	      localStorage.setItem('theme', 'dark');
+	      document.body.classList.add('dark-theme');
+	    }
+	  }
+	</script>
+</body>
+</html>
