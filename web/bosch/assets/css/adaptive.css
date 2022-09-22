@@ -1,0 +1,136 @@
+.d-flex{
+	flex-wrap: wrap;
+}
+.mobile-adress, #nav-icon{
+	display: none;
+}
+@media only screen and (max-device-width: 1024px){
+	.content-block{
+		padding: 0 15px;
+	}
+	.gradient-wrap{
+		padding: 40px 15px;
+	}
+	.content-block:nth-child(4){
+		flex-direction: column-reverse !important;
+		align-items: center !important;
+	}
+}
+@media only screen and (max-device-width: 768px){
+	.gradient-wrap .picture,.information-block:nth-child(1),header>nav{
+		display: none !important;
+	}
+	.mobile-adress,#nav-icon{
+		display: block;
+	}
+	header>div.container-fluid.px-5{
+		padding: 0 10px !important;
+	}
+	header h3{
+		font-size: 19px;
+	}
+	header .logo{
+		margin-left: 60px;
+	}
+	.category-item{
+		/*width: 200px;*/
+		height: 195px;
+	}
+	.categories{
+		flex-wrap: wrap !important;
+		justify-content: space-around !important;
+	}
+	.table tr td:first-child{
+		width: 300px;
+		padding: 0 30px 0 0;
+	}
+}
+@media only screen and (max-device-width: 425px){
+	.content-block.left{
+		max-width: 400px;
+	}
+	.content-block.about-work-block{
+		flex-direction: column !important;
+	}
+	.covid-message, .quick-order-btn, .information-block p, span.logo-text, .gradient-wrap form h4,
+	.gradient-wrap form div.title-underline, .table tr td:nth-child(3), .table tr th:nth-child(3){
+		display: none;
+	}
+	.navbar-nav-right{
+		flex-direction: column !important;
+	}
+	header>div.container-fluid.px-5{
+		justify-content: flex-start !important;
+	}
+	.information-block{
+		padding: 0;
+		margin: 0;
+	}
+	header h3{
+		font-size: 16px;
+	}
+	.stat{
+		width: 100%;
+	}
+	.gradient-wrap{
+		flex-direction: column;
+		text-align: center;
+	}
+	.gradient-wrap .title{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.gradient-wrap .title h1{
+		font-size: 24px !important;
+	}
+	.gradient-wrap .title p{
+		font-size: 17px;
+		padding: 0;
+	}
+	.gradient-wrap form{
+		padding: 10px;
+	}
+	.gradient-wrap form p{
+		padding: 0 0 20px;
+		font-size: 14px;
+	}
+	.gradient-wrap .title-underline{
+		margin-bottom: 15px;
+	}
+	button.order{
+		width: 100px !important;
+		padding: 0 !important;
+		font-size: 14px !important;
+	}
+	.table{
+		margin: 0 !important;
+	}
+	.table-body{
+		padding: 10px;
+	}
+	.table tr td:first-child{
+		width: 100px !important;
+		height: 100px;
+		padding: 0 10px 0 0;
+	}
+	.content-block.left{
+		max-width: 300px;
+	}
+}
+@media only screen and (max-device-width: 375px){
+	header h3{
+		font-size: 13px;
+	}
+	header img{
+		width: 100px;
+	}
+	.table tr td:nth-child(2),.table tr th:nth-child(2){
+		display: none;
+	}
+	.table tr td:first-child{
+		max-width: 50% !important;
+		height: 100px;
+		padding: 0 10px 0 0;
+	}
+}

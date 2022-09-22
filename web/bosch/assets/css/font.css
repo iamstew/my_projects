@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat.woff') format("woff"); /* IE 9 Compatibility Mode */
+}
+*{
+	font-family: 'Montserrat';
+}

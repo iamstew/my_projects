@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/animations.css">
+	<link rel="stylesheet" href="assets/css/nav-icon.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="modal-window-bg d-none">
+		<div class="modal-window">
+			<button class="close-modal-window">
+				<span>
+					<svg width="25" height="25" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24">
+						<path d="m21 3.998c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-8.991 6.932 2.717-2.718c.146-.146.338-.219.53-.219.405 0 .751.325.751.75 0 .193-.073.384-.219.531l-2.718 2.717 2.728 2.728c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.384-.073-.531-.219l-2.728-2.728-2.728 2.728c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l2.728-2.728-2.722-2.722c-.146-.147-.219-.338-.219-.531 0-.425.346-.749.75-.749.192 0 .384.073.53.219z" fill-rule="nonzero"/>
+					</svg>
+				</span>
+			</button>
+			<div class="d-flex align-items-center flex-column">
+				<h3>Быстрый заказ</h3>
+				<div class="title-underline"></div>
+			</div>
+			<p>Оставьте свой номер и мы перезвоним Вам через 30 секунд</p>
+			<form action>
+				<input type="tel" placeholder="Ваш номер" name="phone" class="phone">
+				<input type="submit" class="submit" value="Заказать">
+			</form>
+		</div>
+	</div>
+	<button class="call-btn">
+		<svg width="34" height="34" viewBox="0 0 16 16" fill="#fff">
+      <path fill-rule="evenodd" d="M3.925 1.745a.636.636 0 0 0-.951-.059l-.97.97c-.453.453-.62 1.095-.421 1.658A16.47 16.47 0 0 0 5.49 10.51a16.471 16.471 0 0 0 6.196 3.907c.563.198 1.205.032 1.658-.421l.97-.97a.636.636 0 0 0-.06-.951l-2.162-1.682a.636.636 0 0 0-.544-.115l-2.052.513a1.636 1.636 0 0 1-1.554-.43L5.64 8.058a1.636 1.636 0 0 1-.43-1.554l.513-2.052a.636.636 0 0 0-.115-.544L3.925 1.745zM2.267.98a1.636 1.636 0 0 1 2.448.153l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"></path>
+    </svg>
+	</button>
+	<header>
+		<div class="covid-message">
+			Обрабатываем Вашу технику до и после ремонта антисептиком. Измеряем температуру курьерам каждое утро. Мы предлагаем самый безопасный ремонт техники Bosch
+		</div>
+		<nav class="navbar navbar-nav flex-row navbar-dark justify-content-around bd-navbar p-0 px-4">
+			<a href="#" class="nav-link px-1">Сроки ремонта</a>
+			<a href="#" class="nav-link px-1">Наши цены</a>
+			<a href="#" class="nav-link px-1">Гарантия</a>
+			<a href="#" class="nav-link px-1">Доставка</a>
+			<a href="#" class="nav-link px-1">Наши мастера</a>
+			<a href="#" class="nav-link px-1">Скидки</a>
+			<a href="#" class="nav-link px-1">О компании</a>
+			<a href="#" class="nav-link px-1">Контакты</a>
+			<form action class="search">
+				<input type="text" class="search-input" name="search" value="" placeholder="Поиск">
+				<svg width="36" height="36" viewBox="0 0 38 38">
+					<path fill="#0c0020" d="M31 30.111a.878.878 0 0 1-.267.622.88.88 0 0 1-.622.267.718.718 0 0 1-.578-.267l-6.476-6.475a9.728 9.728 0 0 1-6.28 2.298C11.4 26.556 7 22.156 7 16.778S11.4 7 16.778 7c5.377 0 9.777 4.4 9.777 9.778 0 2.363-.85 4.538-2.259 6.233l6.437 6.477c.178.178.267.4.267.623zm-14.222-5.333c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8z"></path>
+				</svg>
+			</form>
+		</nav>
+		<div class="container-fluid navbar p-0 px-5 justify-content-between align-items-center">
+			<div class="d-flex flex-row align-items-center">
+				<button id="nav-icon">
+					<span></span>
+				  <span></span>
+				  <span></span>
+				</button>
+				<a href="#" class="logo d-flex flex-column">
+					<img width="160" src="assets/img/logo-bosch.png" alt>
+					<span class="logo-text">Специализированный сервисный центр</span>
+				</a>
+			</div>
+			<div class="navbar-nav-right d-flex flex-row">
+				<div class="information-block">
+          <div class="information-block-address" role="button" tabindex="0">
+            <p class="underline-hover">г. Екатеринбург,<br> ул. 8 марта д. 45а</p>
+          </div>
+          <div class="information-block-time">
+            <p>пн-вс: 09.00-20.00</p>
+          </div>
+      	</div>
+      	<div class="information-block center">
+		    	<div class="information-block-phone">
+		        <a href="tel:+73433510819"><h3 class="underline-hover">+7 (343) 351-08-19</h3></a>
+		      </div>
+		      <button class="quick-order-btn">быстрый заказ</button>
+		    </div>
+		    <div class="information-block">
+	        <div class="information-block-phone">
+	        	<a href="tel:+78007075593"><h3 class="underline-hover">8 (800) 707-55-93</h3></a>
+	        </div>
+	        <p>Бесплатный звонок по РФ</p>
+	      </div>
+			</div>
+			<div class="mobile-adress">
+				<p class="underline-hover">г. Екатеринбург, ул. 8 марта д. 45а</p>
+			</div>
+		</div>
+		<nav class="navbar navbar-nav flex-row navbar-dark justify-content-center p-0">
+			<a href="#" class="nav-link p-3">Ремонт стиральных машин</a>
+			<a href="#" class="nav-link p-3">Ремонт посудомоечных машин</a>
+			<a href="#" class="nav-link p-3">Ремонт сушильных машин</a>
+			<a href="#" class="nav-link p-3">Ремонт кофемашин</a>
+			<a href="#" class="nav-link p-3">Ремонт роботов пылесосов</a>
+		</nav>
+	</header>
+	<main>
+		<div class="gradient-wrap">
+			<div class="title">
+				<h1>Ремонт стиральных машин Bosch</h1>
+				<div class="title-underline"></div>
+				<p>Быстро, качественно с выездом на дом отремонтируем технику Бош. У нас лучший сервис в Екатеринбурге!</p>
+			</div>
+			<div class="picture">
+				<img src="assets/img/washer.png" alt>
+			</div>
+			<form action>
+				<h4>быстрый заказ</h4>
+				<div class="title-underline"></div>
+				<p>Оставьте номер своего телефона и мы перезвоним Вам через 30 секунд</p>
+				<input type="tel" placeholder="Введите Ваш телефон" name="phone" class="phone">
+				<input type="submit" class="submit" value="Заказать">
+			</form>
+		</div>
+		<div class="content-block m-top">
+			<h2>СТОИМОСТЬ РЕМОНТА СТИРАЛЬНЫХ МАШИН BOSCH</h2>
+			<div class="title-underline"></div>
+			<div class="table-block">
+				<div class="table-head"></div>
+				<div class="table-body">
+					<h6>Ремонт стиральных машин</h6>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Наименование услуги</th>
+								<th>Цена</th>
+								<th>Время, час</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Установка</td>
+								<td>от 2490 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Ремонт мотора</td>
+								<td>от 2790 ₽</td>
+								<td>4 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Замена подшипников</td>
+								<td>от 2790 ₽</td>
+								<td>4 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Замена приводного ремня</td>
+								<td>от 1990 ₽</td>
+								<td>30 минут</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Ремонт насоса</td>
+								<td>от 2190 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Ремонт кнопок и дисплея</td>
+								<td>от 2390 ₽</td>
+								<td>4 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Замена помпы стиральной машины Bosch</td>
+								<td>от 490 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Замена ремня стиральной машины Bosch</td>
+								<td>от 490 ₽</td>
+								<td>3 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Замена щеток стиральной машины Bosch</td>
+								<td>от 490 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Замена подшипника стиральной машины Bosch</td>
+								<td>от 490 ₽</td>
+								<td>4 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Замена ТЭНа стиральной машины Bosch</td>
+								<td>от 490 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Замена манжеты люка стиральной машины Bosch</td>
+								<td>от 490 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+						</tbody>
+					</table>
+					<h6>Общие проблемы</h6>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Наименование услуги</th>
+								<th>Цена</th>
+								<th>Время, час</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Не включается</td>
+								<td>от 2390 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Течёт</td>
+								<td>от 2690 ₽</td>
+								<td>3 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Не открывает люк</td>
+								<td>от 2490 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Не отжимает</td>
+								<td>от 2790 ₽</td>
+								<td>4 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Не греет воду</td>
+								<td>от 2190 ₽</td>
+								<td>3 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Не греет воду</td>
+								<td>от 2190 ₽</td>
+								<td>3 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Не сливает воду</td>
+								<td>от 2190 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Не набирает воду</td>
+								<td>от 2190 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Не крутит барабан</td>
+								<td>от 2790 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Не включается</td>
+								<td>от 1890 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Шумит и гремит при отжиме</td>
+								<td>от 2190 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Прыгает во время отжима</td>
+								<td>от 2790 ₽</td>
+								<td>4 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+							<tr>
+								<td>Бьёт током</td>
+								<td>от 2690 ₽</td>
+								<td>2 часа</td>
+								<td><button class="order">заказать</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="content-block justify-content-center">
+			<h2>КАК МЫ РЕМОНТИРУЕМ СТИРАЛЬНЫЕ МАШИНЫ БОШ В НАШЕМ СЕРВИСЕ</h2>
+			<div class="title-underline"></div>
+			<p>Наш сервис 2008 года занимается ремонтом стиральных машин Bosch. За это время выпущено несколько поколений стиралок. Компания вводит новые функции, следит за спросом и отвечает на предложения клиентов. С каждым годом расширяется товарный ряд.</p>
+			<p>Не бойтесь, если вы владелец более старой модели или наоборот последней. Наши инженеры разбираются с любыми. Типовые проблемы возникают из-за жесткой воды, сбоя в сети электропитания, ошибки в эксплуатации (изменение режима стирки в процессе, лишней вещи, попавшей в барабан).</p>
+			<h2>Наиболее частые поломки у стиральных машин Bosch</h2>
+			<ul>
+				<li>Неисправен мотор. Специалист проверит двигатель, контакты, основной мотор. Проведет наладку или замену, если потребуется.</li>
+				<li>Неисправен датчик потока, который выдает неправильные значения.</li>
+				<li>Двигатель не вращается. Обычно, виной этому – застрявшая вещь между баком и барабаном.</li>
+				<li>Нарушение в датчике температуры. Причина – короткое замыкание.</li>
+				<li>Сломан замок, люк не открывается.</li>
+				<li>Перегрев, когда его не должно быть.</li>
+			</ul>
+			<p>Машинки Bosch нового поколения оснащены функцией, которая выдает код ошибки в работе на панели управления. Аппарат сам подскажет вам, что именно сломалось и тогда стоит пригласить мастера. Если же у вас более ранняя версия, то как только вы заметите проблему и также обратитесь в сервис в Екатеринбурга.</p>
+			<p>Проводить ремонт такого сложного оборудования, как стиральные машины, самостоятельно не рекомендуется. Во-первых, часто в починке требуются дополнительные детали. Они нужны оригинальные, какие и используются в нашей мастерской. Во-вторых, при незнании четкого порядка действий легко нарушается конструкция, ломаются другие элементы.</p>
+			<p>На починку потребуется несколько часов. За это происходит оформление официального договора, бесплатная консультация, ремонт, выдача гарантия. Перед оплатой инженер вместе с вами проверит функциональность. Только при полной исправности произойдет оплата.</p>
+			<p>Мастерская расположена в городе Екатеринбурга. Мы можете приехать к нам и объяснить ситуацию по адресу ул. 8 марта д. 45а. Или позвонить по телефону +7 (343) 351-08-19, вам ответят на вопросы и согласуют время.</p>
+		</div>
+		<div class="content-block about-work-block m-top flex-row justify-content-between">
+			<div class="about-work">
+				<div class="svg"></div>
+				<div class="title-underline"></div>
+				<span>Бесплатная диагностика</span>
+			</div>
+			<div class="about-work">
+				<div class="svg"></div>
+				<div class="title-underline"></div>
+				<span>Бесплатный курьер</span>
+			</div>
+			<div class="about-work">
+				<div class="svg"></div>
+				<div class="title-underline"></div>
+				<span>Ремонт в течение дня</span>
+			</div>
+			<div class="about-work">
+				<div class="svg"></div>
+				<div class="title-underline"></div>
+				<span>Гарантия на ремонт до 3 лет</span>
+			</div>
+			<div class="about-work">
+				<div class="svg"></div>
+				<div class="title-underline"></div>
+				<span>Оригинальные запчасти</span>
+			</div>
+		</div>
+		<div class="content-block m-top">
+			<h2>НАШИ РАБОТЫ</h2>
+			<div class="title-underline"></div>
+			<div class="d-flex w-100 flex-row justify-content-around">
+				<video width="310" height="175" controls="controls" poster="https://ekb.bosch-servisniy.center//templates/video/one-plus/play-video.jpg">
+          <source src="https://ekb.bosch-servisniy.center/templates/video/one-plus/oneplus.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+        </video>
+        <video width="310" height="175" controls="controls" poster="https://ekb.bosch-servisniy.center//templates/video/mate20pro.jpg">
+          <source src="https://ekb.bosch-servisniy.center/templates/video/huawei-mate-20-pro.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+        </video>
+        <video width="310" height="175" controls="controls" poster="https://ekb.bosch-servisniy.center//templates/video/p30pro.jpg">
+          <source src="https://ekb.bosch-servisniy.center/templates/video/Huawei-P30-Pro.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+        </video>
+			</div>
+		</div>
+		<div class="content-block m-top">
+			<h2>ОТЗЫВЫ</h2>
+			<div class="title-underline"></div>
+		</div>
+		<div class="gradient-wrap m-top">
+			<div class="title">
+				<h1>Оставьте заявку на ремонт</h1>
+				<div class="title-underline"></div>
+				<p>И получите скидку 10%</p>
+			</div>
+			<div class="picture">
+				<img src="assets/img/bg-bosch.png" alt>
+			</div>
+			<form action>
+				<h4>быстрый заказ</h4>
+				<div class="title-underline"></div>
+				<p>Оставьте номер своего телефона и мы перезвоним Вам через 30 секунд</p>
+				<input type="tel" placeholder="Ваш телефон" name="phone" class="phone">
+				<input type="submit" class="submit" value="Заказать">
+			</form>
+		</div>
+	</main>
+	<footer class="content-block py-5">
+		<div class="d-flex w-100 flex-column">
+			<div class="d-flex w-100 flex-row justify-content-between">
+				<div class="d-flex flex-column">
+					<img width="160" src="assets/img/logo-bosch.png" alt>
+					<p>Поделись в соц. сети <br>и получи  скидку на ремонт</p>
+					<div>
+            <!-- <svg class="social-share-icon vk-icon" role="button" id="vk" tabindex="0">
+              <use xlink:href="#vk-icon"></use>
+            </svg>
+            <svg class="social-share-icon facebook-icon" role="button" id="facebook" tabindex="0">
+              <use xlink:href="#facebook-icon"></use>
+            </svg>
+            <svg class="social-share-icon telegram-icon" role="button" id="telegram" tabindex="0">
+              <use xlink:href="#telegram-icon"></use>
+            </svg>
+            <svg class="social-share-icon ok-icon" role="button" id="ok" tabindex="0">
+              <use xlink:href="#ok-icon"></use>
+            </svg> -->
+        	</div>
+					<p class="footer-item footer-item-top">Принимаем к оплате:</p>
+					<div class="payments d-flex flex-row align-items-start">
+						<div class="d-flex flex-column align-items-start">
+							<img alt="Принимаем к оплате карты VISA" title="Принимаем к оплате карты VISA" src="assets/img/icon-visa.svg">
+							<img alt="Принимаем к оплате карты Mastercard" title="Принимаем к оплате карты Mastercard" src="assets/img/icon-mastercard.svg">
+							<img alt="Принимаем к оплате карты Мир" title="Принимаем к оплате карты Мир" src="assets/img/icon-mir.svg">
+						</div>
+						<div class="d-flex flex-column align-items-start">
+							<img alt="Принимаем к оплате карты Maestro" title="Принимаем к оплате карты Maestro" src="assets/img/icon-maestro.svg">
+							<img alt="Принимаем к оплате карты Сбербанк" title="Принимаем к оплате карты Сбербанк" src="assets/img/icon-sber.svg">
+							<img alt="Принимаем к оплате карты Газпром" title="Принимаем к оплате карты Газпром" src="assets/img/icon-gaz.svg">
+						</div>
+						<div class="d-flex flex-column align-items-start">
+							<img alt="Принимаем к оплате карты VTB" title="Принимаем к оплате карты ВТБ" class="footer-pay-image image-base loaded" src="assets/img/icon-vtb.svg">
+							<img alt="Принимаем к оплате карты Alfa-Bank" title="Принимаем к оплате карты Alfa-Bank" src="assets/img/icon-alfa.svg">
+							<img alt="Принимаем к оплате карты Tinkoff" title="Принимаем к оплате карты Tinkoff" src="assets/img/icon-tin.svg">
+						</div>
+					</div>
+				</div>
+				<div class="links d-flex flex-column align-items-start">
+					<a href="#">Ремонт стиральных машин</a>
+					<a href="#">Ремонт посудомоечных машин</a>
+					<a href="#">Ремонт сушильных машин</a>
+					<a href="#">Ремонт кофемашин</a>
+					<a href="#">Ремонт роботов пылесосов</a>
+				</div>
+				<div class="links d-flex flex-column align-items-start">
+					<a href="#">Замена дренажного клапана кофемашины Bosch</a>
+					<a href="#">Замена помпы стиральной машины Bosch</a>
+					<a href="#">Замена фильтра робота-пылесоса Bosch</a>
+					<a href="#">Замена аккумулятора робота-пылесоса Bosch</a>
+					<a href="#">Ремонт дисплейного модуля кофемашины Bosch</a>
+					<a href="#">Замена уплотнителя в посудомоечной машине Bosch</a>
+					<a href="#">Замена ремня стиральной машины Bosch</a>
+					<a href="#">Замена помпы посудомоечной машины Bosch</a>
+					<a href="#">Замена щеток стиральной машины Bosch</a>
+					<a href="#">Замена подшипника стиральной машины Bosch</a>
+					<a href="#">Ремонт заварочного блока кофемашины Bosch</a>
+					<a href="#">Замена ТЭНа стиральной машины Bosch</a>
+					<a href="#">Замена манжеты люка стиральной машины Bosch</a>
+				</div>
+				<div class="links d-flex flex-column align-items-start">
+					<a href="#">Сроки ремонта</a>
+					<a href="#">Наши цены</a>
+					<a href="#">Гарантия</a>
+					<a href="#">Доставка</a>
+					<a href="#">Контакты</a>
+					<a href="#">Скидки</a>
+					<a href="#">Вакансии</a>
+					<a href="#">О компании</a>
+					<a href="#">Отзывы</a>
+				</div>
+			</div>
+			<div class="second-footer-block">
+				<div class="d-flex flex-row justify-content-between">
+					<div>
+		        <a href="tel:+73433510819"><h6 class="underline-hover">+7 (343) 351-08-19</h6></a>
+		      </div>
+		      <div>
+		      	<p class="footer-group-text">г. Екатеринбург,<br>ул. 8 марта д. 45а</p>
+		      </div>
+		      <div>
+		      	<p class="footer-group-text">Режим работы:<br>пн-вс: 09.00-20.00</p>
+		      </div>
+		      <div>
+		      	<a href="#">Политика конфиденциальности</a>
+		      </div>
+				</div>
+			</div>
+			<div>
+				Сервисный центр Bosch является пост гарантийным (не авторизованным) сервисным центром. Торговые марки Bosch являются зарегистрированным товарными знаками компании правообладателя. Обозначения используется не с целью индивидуализации соответствующих услуг по ремонту, а с целью информирования потребителей о предоставляемых услугах в отношении техники правообладателя. Не является публичной офертой.
+			</div>
+			<div class="text-center pt-3">
+				© 2014 — 2022 Сервисный центр техники Bosch в Екатеринбурге.
+			</div>
+		</div>
+	</footer>
+	<script src="assets/js/carousel.js"></script>
+	<link rel="stylesheet" href="assets/css/adaptive.css">
+</body>
+</html>
