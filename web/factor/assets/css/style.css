@@ -17,6 +17,7 @@
 	line-height: normal;
 	font-family: 'Montserrat';
 }
+
 .logo-row{
 	height: 120px;
 	padding: 10px 0;
@@ -121,7 +122,7 @@ header .nav-link>a:hover, .user-block:hover>a{
 .color-card .content-block{
 	position: relative;
 	z-index: 10;
-	padding: 90px 0 90px 100px;
+	padding: 90px 100px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -134,10 +135,6 @@ header .nav-link>a:hover, .user-block:hover>a{
 .color-card .content-block .content-left .title{
 	font-size: 40px;
 	font-weight: 700;
-}
-.color-card .content-block .content-right{
-	height: 70%;
-	width: 40%;
 }
 .color-card .content-block .content-right img{
 	max-height: 500px;
@@ -160,6 +157,9 @@ header .nav-link>a:hover, .user-block:hover>a{
 	width: 100%;
 }
 body{
+    margin: auto;
+    width:100%;
+    max-width: 1650px;
 	background: #fff;
 	transition: .3s;
 	animation: loading 1s ease-in;
@@ -175,16 +175,10 @@ body.dark-theme a{
 }
 body .logo-dark-theme, body .moon,
 body.dark-theme .logo-light-theme, 
-body.dark-theme .sun,
-.user-block:hover img.user-light, 
-.user-block:hover img.user-dark,
-body.dark-theme img.user-dark,
-img.user-hover, img.user-light{
+body.dark-theme .sun{
 	display: none;
 }
 body.dark-theme .logo-dark-theme, 
-body.dark-theme .moon, 
-.user-block:hover img.user-hover,
-body.dark-theme img.user-light{
+body.dark-theme .moon{
 	display: block;
 }
