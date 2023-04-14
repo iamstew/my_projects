@@ -1,0 +1,22 @@
+body.dark-theme{
+	background: #000;
+}
+body.dark-theme .nav-link{
+	color: #fff;
+}
+body.dark-theme .logo-dark-theme, 
+body.dark-theme .moon 
+{
+	display: block;
+}
+
+body.dark-theme .logo-light-theme, 
+body.dark-theme .sun{
+	display: none;
+}
+body.dark-theme .edges{
+    background-color: #191919;
+}
+body.dark-theme {
+    color: #fff;
+}

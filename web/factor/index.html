@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/img/icon.png">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/adaptive.css">
-	<title>Document</title>
+	<script src="https://kit.fontawesome.com/060207939c.js" crossorigin="anonymous"></script>
+	<title>Фактор безопасности</title>
 </head>
+
 <body>
 	<header>
-		<div class="logo-row">
+		<div class="nav-row">
 			<div class="nav-left">
 				<div class="logo">
 					<a href="">
 						<img class="logo-dark-theme" src="assets/img/logo-light.png" alt>
 						<img class="logo-light-theme" src="assets/img/logo-dark.png" alt>
-					</a>	
+					</a>
 				</div>
 			</div>
 			<div class="nav-center">
-				<div class="nav-link">
-					<a href="#">Для чего нужен</a>
-				</div>
-				<div class="nav-link">
-					<a href="#">Стоимость</a>
-				</div>
-				<div class="nav-link">
-					<a href="#">Услуги</a>
-				</div>
+				<a class="nav-link" href="#require">Для чего нужен</a>
+				<a class="nav-link" href="#">Стоимость</a>
+				<a class="nav-link" href="#">Услуги</a>
 			</div>
 			<div class="nav-right">
-				<div class="align-center user-block">
-					<a href="#">
-						Войти
-					</a>
-				</div>
-				<div>
-					<button class="btn contact-with-us">Связаться с нами</button>
-				</div>
+				<button class="btn contact-with-us">Связаться с нами</button>
 				<div class="theme-toggle">
 					<a href="#" onclick="changeTheme()">
 						<img class="moon" src="assets/img/moon.png">
@@ -46,48 +36,212 @@
 				</div>
 			</div>
 		</div>
-		<div></div>
 	</header>
 	<main>
-		<div class="color-card">
-			<div class="card-bg"><div></div></div>
+		<div class="color-card wrap animation">
+			<div class="card-bg">
+				<div></div>
+			</div>
 			<div class="content-block">
 				<div class="content-left">
-					<span class="title">Поможем разработать и согласовать Паспорт безопасности  (АТЗ) для вашего объекта</span>
-					<div class="pt-5 h3-text"><span>от 35 000 рублей</span><span>"Под ключ"</span></div>
-					<span class="light-text pt-5">В соответствии с действующим законодательством.
-					Согласуем гарантированно в МЧС, ФСБ, МВД, Росгвардии.</span>
+					<span class="title">Поможем разработать и согласовать Паспорт безопасности (АТЗ) для вашего
+						объекта</span>
+					<span class="light-text pt-5">В соответствии с действующим законодательством.<br>
+						Согласуем гарантированно в МЧС, ФСБ, МВД, Росгвардии.</span>
 					<div class="pt-5">
 						<button class="btn order-call" onclick="">Оставить заявку</button>
 					</div>
 				</div>
-				<div class="content-right">
+				<!-- <div class="content-right">
 					<img src="assets/img/book.png" alt>
+				</div> -->
+			</div>
+		</div>
+		<div class="edges wrap animation">
+			<div class="edges__price">
+				<i class="fa-solid fa-money-check-dollar"></i>
+				<p class="edges__text">
+					Без внезапных доплат.<br>
+					Стоимость закрепляется в договоре
+				</p>
+			</div>
+			<div class="edges__key">
+				<i class="fa-solid fa-key"></i>
+				<p class="edges__text">
+					Разработаем весь пакет документов и согласуем в соответствующих ведомствах
+				</p>
+			</div>
+			<div class="edges__secure">
+				<i class="fa-solid fa-file-shield"></i>
+				<p class="edges__text">
+					С момента подписания договора с нами Вы защищены от штрафов
+				</p>
+			</div>
+		</div>
+		<div class="wrap animation" id="require">
+			<div class="require">
+				<p class="require__text">
+					Cогласно ПП РФ №8 от 13.01.2017<br>
+					Правообладатель объекта обязан разработать Паспорт безопасности (антитеррористической защищенности)<br>
+					<b>в течение</b><span class="require__text-red"> 30 </span><b>дней со дня открытия объекта</b>
+				</p>
+				<img src="assets/img/emblem.png" alt="" class="emblem">
+			</div>
+		</div>
+		<div class="QandA wrap animation">
+			<p class="QandA__title">
+				Простое <span class="colored">решение</span><br>сложных вопросов
+			</p>
+			<p class="QandA__text">
+				"Фактор безопасности" имеет лицензию МЧС России и является членом <br> Ассоциации экспертно-аналитического центра проектировщиков "Проектный портал", <br> что существенно снижает риски работы с нами <br> и повышает нашу надежность, как Вашего партнера." <br>
+				Мы будем рады сотрудничать с Вами, а наши специалисты сделают все возможное <br> для обеспечения безопасности Вашей жизни и Вашего бизнеса!
+			</p>
+		</div>
+		<div class="services wrap animation">
+			<div class="services__leader">
+				<img src="assets/img/leader.jpeg" alt="" class="services__image">
+				<p class="services__leader-text">
+					Руководитель ООО "Фактор безопасности"<br>
+					<span class="services__leader-name colored">Егоров Илья Александрович</span>
+				</p>
+			</div>
+			<ul class="resolution">
+				<p class="resolution__title">
+					Мы предлагаем услуги в соответствии с:</p>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 19 октября 2017 г. № 1273
+					</p>
+				</li>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 02 августа 2019 г. № 1006
+					</p>
+				</li>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 14 апреля 2017 г. № 447
+					</p>
+				</li>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 28 апреля 2007 г. № 255
+					</p>
+				</li>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 11 февраля 2017 г. N 176
+					</p>
+				</li>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 13 января 2017 г. N 8
+					</p>
+				</li>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 13 мая 2016 г. № 410
+					</p>
+				</li>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 23 декабря 2016 г. № 1467
+					</p>
+				</li>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 25 марта 2015 г. № 272
+					</p>
+				</li>
+				<li class="resolution__item">
+					<i class="fa-solid fa-fire-flame-curved list-point"></i>
+					<p class="resolution__text">
+						Постановление Правительства РФ от 06 марта 2015 г. № 202
+					</p>
+				</li>
+			</ul>
+		</div>
+		<div class="QandA wrap animation">
+			<p class="QandA__title">
+				Почему <span class="colored">доверяют</span> именно нам
+			</p>
+			<p class="QandA__text">
+				Позвоните нам сегодня - <br>
+				и уже завтра Вы защищены от проверок!
+			</p>
+		</div>
+		<div class="proof wrap">
+			<div class="proof__item animation">
+				<div class="proof__head">
+					<h3 class="proof__num">1</h3>
+					<p class="proof__title">Подписали  договор - защищены от проверок</p>
 				</div>
+				<p class="proof__text">
+					После подписания договора мы берем на себя общение с компетентными органами. <br> Вы получаете на руки титульный лист паспорта безопасности после каждого согласования и сопроводительное письмо в органы, которые гарантируют защиту от наложения штрафов
+				</p>
+			</div>
+			<div class="proof__item animation">
+				<div class="proof__head">
+					<h3 class="proof__num">2</h3>
+					<p class="proof__title">Быстро и с первого раза</p>
+				</div>
+				<p class="proof__text">
+					За плечами десятилетний опыт работы в государственных предприятиях. <br>Мы знаем все нюансы подготовки документов для каждого типа объекта и каждого района Москвы и Московской области
+				</p>
+			</div>
+			<div class="proof__item animation">
+				<div class="proof__head">
+					<h3 class="proof__num">3</h3>
+					<p class="proof__title">Под ключ от А до Я</p>
+				</div>
+				<p class="proof__text">
+					После подписания договора мы берем на себя общение с компетентными органами. <br>Вы получаете на руки титульный лист паспорта безопасности после каждого согласования и сопроводительное письмо в органы, которые гарантируют защиту от наложения штрафов
+				</p>
+			</div>
+			<div class="proof__item animation">
+				<div class="proof__head">
+					<h3 class="proof__num">4</h3>
+					<p class="proof__title">Экспертная поддержка на всех этапах</p>
+				</div>
+				<p class="proof__text">
+					Наши специалисты с удовольствием проконсультируют Вас по вопросам разработки и согласования паспорта безопасности еще до подписания договора.
+				</p>
+			</div>
+			<div class="proof__item animation">
+				<div class="proof__head">
+					<h3 class="proof__num">5</h3>
+					<p class="proof__title">Гарантия успеха</p>
+				</div>
+				<p class="proof__text">
+					Наш опыт позволяет согласовывать паспорта в любом районе Москвы и МО. <br>Ведь в каждом районе города есть свои уникальные требования.
+				</p>
+			</div>
+			<div class="proof__item animation">
+				<div class="proof__head">
+					<h3 class="proof__num">6</h3>
+					<p class="proof__title">Работаем исключительно по договору</p>
+				</div>
+				<p class="proof__text">
+					Мы являемся полностью официальной
+					компанией зарегистрированной
+					в соответствии с законами РФ и работаем исключительно по договору.
+					Тем самым Вы не несете финансовых
+					рисков.
+				</p>
 			</div>
 		</div>
 	</main>
-	<script>
-		if (localStorage.getItem('theme') == 'dark') {
-      document.body.classList.add('dark-theme');
-		}
-		else if (localStorage.getItem('theme') == null) {
-			localStorage.setItem('theme', 'light')
-		}
-		else if(localStorage.getItem('theme') == 'light'){
-			document.body.classList.remove('dark-theme');
-    }
-  </script>
-	<script>
-	  function changeTheme() {
-	    if (localStorage.getItem('theme') == 'dark'){
-	      localStorage.setItem('theme', 'light');
-	      document.body.classList.remove('dark-theme');
-	    }else if(localStorage.getItem('theme') == 'light'){
-	      localStorage.setItem('theme', 'dark');
-	      document.body.classList.add('dark-theme');
-	    }
-	  }
-	</script>
+	<script src="assets/js/theme.js"></script>
+	<script src="assets/js/scrollAnimation.js"></script>
 </body>
+
 </html>
